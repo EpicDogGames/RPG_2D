@@ -50,6 +50,9 @@ MonoBehaviour:
   - {fileID: 4742243980969234459}
   - {fileID: 4742243979921982236}
   - {fileID: 4742243980003763952}
+  gameMenuOpen: 0
+  dialogActive: 0
+  fadingBetweenAreas: 0
 --- !u!1 &4742243979921982238
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,24 +157,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06535e578d0f1e4498a0681e0a8e5904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Woody
-  playerLevel: 3
-  currentEXP: 450
+  charName: Sharon
+  playerLevel: 2
+  currentEXP: 300
   expToNextLevel: 
   maxLevel: 10
   baseEXP: 1000
   currentHP: 0
-  maxHP: 150
+  maxHP: 125
   currentMP: 0
-  maxMP: 25
+  maxMP: 40
   mpLevelBonus: 000000000500000000000000000000000a00000000000000000000000f000000000000000000000014000000000000000000000000000000000000000000000019000000000000000000000000000000
-  strength: 22
-  defense: 16
+  strength: 18
+  defense: 12
   weaponPower: 0
   armorPower: 0
   equippedWeapon: 
   equippedArmor: 
-  charImage: {fileID: 21300000, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
+  charImage: {fileID: 21300000, guid: fb8cc55af4b7a034584793949fd90500, type: 3}
 --- !u!1 &4742243980969234460
 GameObject:
   m_ObjectHideFlags: 0

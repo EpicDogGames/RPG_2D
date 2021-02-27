@@ -71,7 +71,6 @@ public class CharStats : MonoBehaviour
 
                 maxMP += mpLevelBonus[playerLevel];
                 currentMP = maxMP;
-
             }
         }
         

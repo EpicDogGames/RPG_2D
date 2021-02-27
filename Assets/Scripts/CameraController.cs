@@ -17,7 +17,6 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //target = PlayerController.instance.transform;
         target = FindObjectOfType<PlayerController>().transform;
 
         halfHeight = Camera.main.orthographicSize;
@@ -32,6 +31,11 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
+        if (target == null)
+        {
+            target = FindObjectOfType<PlayerController>().transform;
+        }
+        
         transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
 
         // keep the camera inside the bounds
