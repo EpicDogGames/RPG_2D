@@ -192,7 +192,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &327317980
 GameObject:
@@ -276,7 +276,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &327317983
 BoxCollider2D:
@@ -13896,6 +13896,75 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &890467665
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4142181283501518719, guid: 5b24fbd3cc66bae4eb79cc5952019456,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142181283501518719, guid: 5b24fbd3cc66bae4eb79cc5952019456,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142181283501518719, guid: 5b24fbd3cc66bae4eb79cc5952019456,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142181283501518719, guid: 5b24fbd3cc66bae4eb79cc5952019456,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142181283501518719, guid: 5b24fbd3cc66bae4eb79cc5952019456,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142181283501518719, guid: 5b24fbd3cc66bae4eb79cc5952019456,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142181283501518719, guid: 5b24fbd3cc66bae4eb79cc5952019456,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142181283501518719, guid: 5b24fbd3cc66bae4eb79cc5952019456,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142181283501518719, guid: 5b24fbd3cc66bae4eb79cc5952019456,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142181283501518719, guid: 5b24fbd3cc66bae4eb79cc5952019456,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142181283501518719, guid: 5b24fbd3cc66bae4eb79cc5952019456,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7893258885377192346, guid: 5b24fbd3cc66bae4eb79cc5952019456,
+        type: 3}
+      propertyPath: m_Name
+      value: Health Potion
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5b24fbd3cc66bae4eb79cc5952019456, type: 3}
 --- !u!1 &955441352
 GameObject:
   m_ObjectHideFlags: 0
@@ -16831,7 +16900,7 @@ Transform:
   - {fileID: 344152299}
   - {fileID: 955441353}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1993304106
 PrefabInstance:
@@ -16918,7 +16987,7 @@ PrefabInstance:
     - target: {fileID: 8603212590221978165, guid: 9b7f18040da88d54995fe6de0152ac67,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8603212590221978165, guid: 9b7f18040da88d54995fe6de0152ac67,
         type: 3}
@@ -16999,7 +17068,7 @@ PrefabInstance:
     - target: {fileID: 2927181202102021667, guid: 24eaad9cac761984cb8057dcf4caa6aa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2927181202102021667, guid: 24eaad9cac761984cb8057dcf4caa6aa,
         type: 3}
