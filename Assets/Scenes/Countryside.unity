@@ -5528,6 +5528,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1395786210, guid: 9b7f18040da88d54995fe6de0152ac67, type: 3}
+      propertyPath: transitionName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1395786211, guid: 9b7f18040da88d54995fe6de0152ac67, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.05
@@ -5559,7 +5563,7 @@ PrefabInstance:
     - target: {fileID: 8603212590221978163, guid: 9b7f18040da88d54995fe6de0152ac67,
         type: 3}
       propertyPath: m_Name
-      value: Exit
+      value: Area Exit
       objectReference: {fileID: 0}
     - target: {fileID: 8603212590221978164, guid: 9b7f18040da88d54995fe6de0152ac67,
         type: 3}
