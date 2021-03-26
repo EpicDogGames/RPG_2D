@@ -49,6 +49,8 @@ public class BattleManager : MonoBehaviour
     public int rewardXP;
     public string[] rewardItems;
 
+    public bool canNotFlee;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,7 +64,7 @@ public class BattleManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             //BattleStart(new string[] { "Eyeball", "Spider", "Skeleton" } );
-            BattleStart(new string[] { "Eyeball"} );
+            BattleStart(new string[] { "Eyeball"}, false);
         }
 
         if (battleActive)
@@ -87,10 +89,11 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public void BattleStart(string[] enemiesToSpawn)
+    public void BattleStart(string[] enemiesToSpawn, bool setCanNotFlee)
     {
         if (!battleActive)
         {
+            canNotFlee = setCanNotFlee;
             battleActive = true;
 
             GameManager.instance.battleActive = true;
@@ -401,20 +404,28 @@ public class BattleManager : MonoBehaviour
 
     public void Flee() 
     {
-        int fleeSuccess = Random.Range(0, 100);
-        if (fleeSuccess < chanceToFlee)
+        if (canNotFlee)
         {
-            // end the battle
-            // battleActive = false;
-            // battleScene.SetActive(false);
-            fleeing = true;
-            StartCoroutine(EndBattleCoroutine());
+            battleNotification.theText.text = "Can not flee boss battle!";
+            battleNotification.ActivateNotification();
         }
         else
         {
-            NextTurn();
-            battleNotification.theText.text = "Couldn't escape!";
-            battleNotification.ActivateNotification();
+            int fleeSuccess = Random.Range(0, 100);
+            if (fleeSuccess < chanceToFlee)
+            {
+                // end the battle
+                // battleActive = false;
+                // battleScene.SetActive(false);
+                fleeing = true;
+                StartCoroutine(EndBattleCoroutine());
+            }
+            else
+            {
+                NextTurn();
+                battleNotification.theText.text = "Couldn't escape!";
+                battleNotification.ActivateNotification();
+            }
         }
     }
 

@@ -9905,6 +9905,7 @@ MonoBehaviour:
   - {fileID: 4773236978134209727, guid: a4ded301b24b68341acfe9a0c7a51720, type: 3}
   - {fileID: 1491515003685253769, guid: 069ee738b71f3f2438466a82ad01b209, type: 3}
   - {fileID: 2598930583391999946, guid: 9ad499dc5d40a9d46ab8487a2583167c, type: 3}
+  - {fileID: 2724941857189148848, guid: 6e0292b613006784a9b3b7b7a27c7e70, type: 3}
   activeBattlers: []
   currentTurn: 0
   turnWaiting: 0
